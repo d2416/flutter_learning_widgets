@@ -26,3 +26,19 @@ Mi Card is a personal business card. Imagine every time you wanted to give someo
 >This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
 
 ![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
+
+
+## Personal notes
+
+# Upgrading app
+Your Flutter application is created using an older version of the Android
+embedding. It's being deprecated in favor of Android embedding v2. Follow the
+steps at
+
+https://flutter.dev/go/android-project-migration
+
+to migrate your project.
+
+# Use Hot relod
+
+It's essential to use StatelessWidgets and StaefulWidgets
