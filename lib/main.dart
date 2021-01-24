@@ -11,15 +11,18 @@ class MiCardApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.red.shade700,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 50.0,
-                backgroundImage: AssetImage('images/me.jpg'),
+                radius: 52.0,
+                backgroundColor: Colors.black,
+                child: CircleAvatar(
+                  radius: 50.0,
+                  backgroundImage: AssetImage('images/me.jpg'),
+                ),
               ),
               Text(
                 'David Pineda',
@@ -33,60 +36,56 @@ class MiCardApp extends StatelessWidget {
               Text(
                 'FLUTTER DEVELOPER',
                 style: TextStyle(
-                  color: Colors.teal.shade100,
+                  color: Colors.red.shade100,
                   fontSize: 20.0,
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'Source Sans Pro',
                 ),
               ),
-              Container(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 25.0, horizontal: 25.0),
-                padding: EdgeInsets.all(15.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+385 12 345 6789',
-                      style: TextStyle(
-                          color: Colors.teal,
-                          fontFamily: 'Source Sans Pro',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18.0),
-                    ),
-                  ],
+              // Add separator
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.red.shade100,
                 ),
               ),
-              Container(
-                margin: EdgeInsets.fromLTRB(25.0, 0.0, 25.0, 50.0),
-                padding: EdgeInsets.all(15.0),
-                color: Colors.white,
-                child: Row(children: [
-                  Icon(
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.black,
+                  ),
+                  title: Text(
+                    '+385 12 345 6789',
+                    style: TextStyle(
+                        color: Colors.red.shade800,
+                        fontFamily: 'Source Sans Pro',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18.0),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
                     Icons.email,
-                    color: Colors.teal,
+                    color: Colors.black,
                     size: 20.0,
                   ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
+                  title: Text(
                     'davidpineda@email.com',
                     style: TextStyle(
                       fontSize: 18.0,
-                      color: Colors.teal,
+                      color: Colors.red.shade800,
                       fontFamily: 'Source Sans Pro',
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                ]),
+                ),
               ),
             ],
           ),
