@@ -21,6 +21,16 @@ class MiCardApp extends StatelessWidget {
                 radius: 50.0,
                 backgroundImage: AssetImage('images/me.jpg'),
               ),
+              Text(
+                'David Pineda',
+                style: TextStyle(
+                  fontSize: 40.0,
+                ),
+              ),
+              Text(
+                'Flutter developer',
+                style: TextStyle(fontSize: 40.0, fontStyle: FontStyle.italic),
+              )
             ],
           ),
         ),
