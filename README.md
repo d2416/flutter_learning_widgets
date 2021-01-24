@@ -42,3 +42,8 @@ to migrate your project.
 # Use Hot relod
 
 It's essential to use StatelessWidgets and StaefulWidgets
+
+
+## Spec used for layout challenge
+
+<img src"images/Layout-Challenge-Specs.png" width="300">
