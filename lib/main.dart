@@ -14,6 +14,7 @@ class MiCardApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             verticalDirection: VerticalDirection.up,
             mainAxisSize: MainAxisSize.max,
             children: [
