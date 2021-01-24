@@ -12,7 +12,29 @@ class MiCardApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
-        body: Container(),
+        body: SafeArea(
+          child: Column(
+            children: [
+            Container(
+              color: Colors.blue,
+              width: 100.0,
+              height: 100.0,
+              child: Text("container 1"),
+            ),
+            Container(
+              color: Colors.white,
+              child: Text("container 2"),
+              width: 100.0,
+              height: 100.0,
+            ),
+            Container(
+              color: Colors.red,
+              width: 100.0,
+              height: 100.0,
+              child: Text("container 3"),
+            ),
+          ]),
+        ),
       ),
     );
   }
