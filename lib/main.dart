@@ -13,26 +13,22 @@ class MiCardApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
+          child: Row(
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisSize: MainAxisSize.max,
             children: [
               Container(
                 color: Colors.blue,
-                height: 100.0,
                 child: Text("container 1"),
               ),
               SizedBox(
-                height: 10.0,
+                width: 10.0,
               ),
               Container(
                 color: Colors.white,
                 child: Text("container 2"),
-                height: 100.0,
               ),
               Container(
                 color: Colors.red,
-                height: 100.0,
                 child: Text("container 3"),
               ),
             ],
