@@ -14,26 +14,29 @@ class MiCardApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            verticalDirection: VerticalDirection.up,
+            mainAxisSize: MainAxisSize.max,
             children: [
-            Container(
-              color: Colors.blue,
-              width: 100.0,
-              height: 100.0,
-              child: Text("container 1"),
-            ),
-            Container(
-              color: Colors.white,
-              child: Text("container 2"),
-              width: 100.0,
-              height: 100.0,
-            ),
-            Container(
-              color: Colors.red,
-              width: 100.0,
-              height: 100.0,
-              child: Text("container 3"),
-            ),
-          ]),
+              Container(
+                color: Colors.blue,
+                width: 100.0,
+                height: 100.0,
+                child: Text("container 1"),
+              ),
+              Container(
+                color: Colors.white,
+                child: Text("container 2"),
+                width: 100.0,
+                height: 100.0,
+              ),
+              Container(
+                color: Colors.red,
+                width: 100.0,
+                height: 100.0,
+                child: Text("container 3"),
+              ),
+            ],
+          ),
         ),
       ),
     );
