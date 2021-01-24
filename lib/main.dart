@@ -15,6 +15,7 @@ class MiCardApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.end,
             verticalDirection: VerticalDirection.up,
             mainAxisSize: MainAxisSize.max,
             children: [
@@ -27,7 +28,7 @@ class MiCardApp extends StatelessWidget {
               Container(
                 color: Colors.white,
                 child: Text("container 2"),
-                width: 100.0,
+                width: 300.0,
                 height: 100.0,
               ),
               Container(
@@ -36,6 +37,9 @@ class MiCardApp extends StatelessWidget {
                 height: 100.0,
                 child: Text("container 3"),
               ),
+              Container(
+                width: double.infinity,
+              )
             ],
           ),
         ),
