@@ -21,19 +21,19 @@ class MiCardApp extends StatelessWidget {
             children: [
               Container(
                 color: Colors.blue,
-                width: 100.0,
+                width: double.infinity,
                 height: 100.0,
                 child: Text("container 1"),
               ),
               Container(
                 color: Colors.white,
                 child: Text("container 2"),
-                width: 300.0,
+                width: double.infinity,
                 height: 100.0,
               ),
               Container(
                 color: Colors.red,
-                width: 100.0,
+                width: double.infinity,
                 height: 100.0,
                 child: Text("container 3"),
               ),
