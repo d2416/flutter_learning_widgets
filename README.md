@@ -46,4 +46,4 @@ It's essential to use StatelessWidgets and StaefulWidgets
 
 ## Spec used for layout challenge
 
-<img src"images/Layout-Challenge-Specs.png" width="300">
+<img src="images/Layout-Challenge-Specs.png" width="300">
