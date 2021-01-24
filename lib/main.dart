@@ -24,13 +24,22 @@ class MiCardApp extends StatelessWidget {
               Text(
                 'David Pineda',
                 style: TextStyle(
+                  fontWeight: FontWeight.bold,
                   fontSize: 40.0,
+                  color: Colors.white,
+                  fontFamily: 'Pacifico',
                 ),
               ),
               Text(
-                'Flutter developer',
-                style: TextStyle(fontSize: 40.0, fontStyle: FontStyle.italic),
-              )
+                'FLUTTER DEVELOPER',
+                style: TextStyle(
+                  color: Colors.teal.shade100,
+                  fontSize: 20.0,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Source Sans Pro',
+                ),
+              ),
             ],
           ),
         ),
